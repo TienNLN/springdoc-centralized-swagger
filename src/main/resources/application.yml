@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+documentation:
+  baseurl: http://localhost
+  swagger:
+    services:
+      -
+        name: Service1
+        url: ${documentation.baseurl}:8081/v1/api-docs?group=service1
+        version: 1.0
+      -
+        name: Service2
+        url: ${documentation.baseurl}:8082/v1/api-docs?group=service2
+        version: 1.0
+
+
+spring:
+  security:
+    user:
+      name: admin
+      password: 123
+
+springdoc:
+  swagger-ui:
+    enabled: true
+    use-root-path: true
+  api-docs:
+    path: /v1/api-docs
