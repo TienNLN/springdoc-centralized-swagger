@@ -1,4 +1,4 @@
-package com.example.dtos;
+package com.example.centralizedswaggerdemo.dtos;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

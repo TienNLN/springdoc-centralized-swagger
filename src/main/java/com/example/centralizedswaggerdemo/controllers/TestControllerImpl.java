@@ -1,4 +1,4 @@
-package com.example.controllers;
+package com.example.centralizedswaggerdemo.controllers;
 
 import org.springframework.stereotype.Component;
 

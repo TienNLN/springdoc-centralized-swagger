@@ -13,23 +13,6 @@ import org.springframework.context.annotation.Bean;
 )
 public class CentralizedSwaggerDemoApplication {
 
-    @Bean
-    public GroupedOpenApi bookApi() {
-        return GroupedOpenApi.builder()
-                .group("Book API")
-                .packagesToScan("com.example.controllers")
-                .build();
-    }
-
-    @Bean
-    public GroupedOpenApi testApi() {
-        return GroupedOpenApi.builder()
-                .group("Test API")
-                .packagesToScan("com.example.controllers")
-                .pathsToMatch("/tests")
-                .build();
-    }
-
     public static void main(String[] args) {
         SpringApplication.run(CentralizedSwaggerDemoApplication.class, args);
     }
