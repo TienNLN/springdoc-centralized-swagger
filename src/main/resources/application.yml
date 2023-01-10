@@ -2,16 +2,11 @@ server:
   port: 8080
 
 documentation:
-  baseurl: http://localhost
   swagger:
     services:
       -
         name: Service1
-        url: ${documentation.baseurl}:8081/v1/api-docs?group=service1
-        version: 1.0
-      -
-        name: Service2
-        url: ${documentation.baseurl}:8082/v1/api-docs?group=service2
+        url: http://localhost:8081/v1/api-docs
         version: 1.0
 
 

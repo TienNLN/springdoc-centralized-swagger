@@ -12,5 +12,5 @@ import org.springframework.web.bind.annotation.RestController;
 public interface TestController {
 
     @GetMapping("tests/testApi")
-    public String testApi();
+    String testApi();
 }
