@@ -20,5 +20,15 @@ springdoc:
   swagger-ui:
     enabled: true
     use-root-path: true
+    urls:
+      -
+        url: https://idratherbewriting.com/learnapidoc/docs/openapi_spec_and_generated_ref_docs/openapi_openweathermap.yml
+        name: weather
+      -
+        url: http://localhost:8081/v1/api-docs
+        name: service1
+      -
+        url: https://petstore.swagger.io/v2/swagger.json
+        name: petstore
   api-docs:
     path: /v1/api-docs

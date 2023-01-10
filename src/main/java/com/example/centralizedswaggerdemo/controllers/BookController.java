@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @author TienNLN on 09/01/2023
  */
-@RestController
-@RequestMapping("/api/books")
+//@RestController
+//@RequestMapping("/api/books")
 public class BookController {
 
     @GetMapping
